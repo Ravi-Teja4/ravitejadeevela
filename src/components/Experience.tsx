@@ -5,34 +5,24 @@ import { CalendarDays, MapPin, Briefcase } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Freelance Cloud Infrastructure Engineer",
-      company: "UH Medicare, Hyderabad",
-      period: "Jun 2025 – Aug 2025",
-      type: "Freelance",
-      location: "Hyderabad",
-      responsibilities: [
-        "Automated AWS infrastructure deployment using Terraform",
-        "Configured CloudWatch metrics, alarms, and logging for enhanced monitoring",
-        "Implemented cost optimization strategies reducing operational expenses by 25%",
-        "Designed and deployed scalable healthcare analytics infrastructure",
-        "Managed multi-environment deployments with Infrastructure as Code"
-      ],
-      technologies: ["AWS", "Terraform", "CloudWatch", "EC2", "S3", "RDS"]
-    },
-    {
-      title: "Cloud Intern",
-      company: "CodTech IT Solutions",
-      period: "Jan 2025 – Mar 2025",
+      title: "Technical Intern",
+      company: "CloudifyOps",
+      period: "December 2025 – Present (1 month)",
       type: "Internship",
-      location: "Remote",
+      location: "Bengaluru, Karnataka, India",
       responsibilities: [
-        "Set up CloudWatch alerts to reduce response time by 20%",
-        "Managed AWS infrastructure including EC2, S3, RDS, Lambda, and VPC",
-        "Provisioned enterprise-scale deployments with Auto Scaling and RDS Multi-AZ",
-        "Implemented secure VPC configurations with proper subnetting",
-        "Collaborated with development teams on cloud-native application deployment"
+        "Assist in the deployment, configuration, and management of applications on AWS Cloud services (EC2, S3, VPC, RDS, Lambda, EKS, etc.)",
+        "Support DevOps practices, including CI/CD pipeline setup and automation using GitHub Actions, Jenkins, or similar tools",
+        "Work with containerization and orchestration tools like Docker and Kubernetes (EKS)",
+        "Monitor, troubleshoot, and optimize cloud infrastructure for performance, scalability, and security",
+        "Manage and configure Linux servers, including package installation, system updates, and performance monitoring",
+        "Assist in creating Infrastructure as Code (IaC) using Terraform or CloudFormation",
+        "Collaborate with senior engineers to understand system architecture and implement best practices",
+        "Document processes, configurations, and deployment steps for future reference",
+        "Learn and apply cloud security, networking, and cost optimization strategies under guidance",
+        "Execute realtime tasks to gain hands-on experience and contribute to live projects"
       ],
-      technologies: ["AWS", "EC2", "S3", "RDS", "Lambda", "VPC", "Auto Scaling", "CloudWatch"]
+      technologies: ["AWS", "EC2", "S3", "VPC", "RDS", "Lambda", "EKS", "Docker", "Kubernetes", "GitHub Actions", "Jenkins", "Terraform", "CloudFormation", "Linux"]
     }
   ];
 
