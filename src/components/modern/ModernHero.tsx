@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
-import profileImage from '@/assets/ravi-teja-latest-photo.jpg';
+import profileImage from '@/assets/ravi-teja-profile-latest.jpg';
 import awsIcon from '@/assets/aws-cloud-icon.jpg';
 import devopsIcon from '@/assets/devops-infinity-icon.png';
 
