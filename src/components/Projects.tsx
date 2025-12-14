@@ -6,45 +6,45 @@ import { Calendar, ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "Utility Health Medicare",
-      period: "Jun – Aug 2025",
-      description: "Designed and deployed a cloud-based infrastructure to support healthcare analytics and reporting systems for population-based health variables. Implemented secure front-end API access and scalable back-end processing.",
+      title: "Deployment of Java Application to Amazon EKS – Fully Automated CI/CD Pipeline",
+      period: "2025",
+      description: "Designed a CI/CD pipeline on GitHub Actions, minimizing manual deployment time by 70%. Containerized the application using Docker, pushed images to Amazon ECR, and managed deployments with Kubernetes manifests on EKS.",
       highlights: [
-        "Used EC2 instances for back-end health logic processing",
-        "Implemented ALB + WAF to secure the front-end API access",
-        "Designed infrastructure for healthcare analytics and reporting",
-        "Managed population-based health variables processing"
+        "Designed a CI/CD pipeline on GitHub Actions, minimizing manual deployment time by 70%",
+        "Containerized the application using Docker, pushed images to Amazon ECR",
+        "Managed deployments with Kubernetes manifests on EKS",
+        "Monitored application logs and performance using kubectl, CloudWatch Logs, Prometheus, and Grafana dashboards for real-time metrics and alerting"
       ],
-      techStack: ["AWS VPC", "S3", "EC2", "Route 53", "WAF", "CloudWatch", "Terraform", "Linux"],
-      type: "Cloud Infrastructure",
+      techStack: ["Docker", "Kubernetes", "Amazon EKS", "AWS", "GitHub Actions", "Prometheus", "Grafana", "Ubuntu Linux"],
+      type: "CI/CD Pipeline",
       status: "Completed"
     },
     {
-      title: "3-Tier Architecture",
-      period: "Apr – May 2025",
-      description: "Designed and implemented scalable 3-tier architectures using AWS services ensuring security, scalability, and high availability across all tiers with efficient traffic distribution.",
+      title: "Realtime Portfolio Deployment on ECS – Fully Automated DevOps Pipeline",
+      period: "2025",
+      description: "Deployed a fully automated personal portfolio website using AWS and DevOps tools with production-grade scalability, integrated metrics, and centralized log monitoring.",
       highlights: [
-        "Designed scalable 3-tier architectures using AWS services",
-        "Ensured security, scalability, and high availability across all tiers",
-        "Utilized load balancers (ELB) for efficient traffic distribution",
-        "Configured Auto Scaling to dynamically adjust resources based on traffic demands"
+        "Set up a CI/CD automation using GitHub Actions integrating Trivy security scans, SonarQube analysis, and ECS-based container deployment",
+        "Developed a serverless backend using API Gateway, Lambda, DynamoDB, and SNS for contact form data handling and notifications",
+        "Achieved production-grade scalability with integrated metrics",
+        "Implemented centralized log monitoring"
       ],
-      techStack: ["AWS EC2", "RDS", "ELB", "Auto Scaling", "Linux"],
-      type: "Architecture Design",
+      techStack: ["AWS", "Docker", "GitHub Actions", "Trivy", "SonarQube", "ECS", "API Gateway", "Lambda", "DynamoDB", "SNS"],
+      type: "DevOps Pipeline",
       status: "Completed"
     },
     {
-      title: "Serverless Web Application",
-      period: "Apr – Jun 2025",
-      description: "Deployed a fully serverless web application using AWS services, reducing operational costs by leveraging pay-per-use pricing model and implementing security best practices.",
+      title: "LLM-Powered Audio Product Review Bot – AudioAdvisor",
+      period: "2025",
+      description: "Implemented a CI/CD pipeline with GitHub Actions, automating builds, tests, and production deployments, reducing manual deployment time by 70%. Enabled instant user responses from the AI chatbot for product recommendations.",
       highlights: [
-        "Reduced operational costs by leveraging AWS's pay-per-use pricing model",
-        "Integrated IAM roles and policies following least privilege principle",
-        "Integrated AWS Secrets Manager for secure environment variable management",
-        "Optimized Lambda performance by minimizing cold start times"
+        "Implemented a CI/CD pipeline with GitHub Actions, automating builds, tests, and production deployments",
+        "Reduced manual deployment time by 70%",
+        "Enabled instant user responses from the AI chatbot, ensuring a seamless, low-latency experience for product recommendations and comparisons",
+        "Set up end-to-end monitoring with Prometheus and Grafana, improving system observability and alerting by 80%"
       ],
-      techStack: ["AWS Lambda", "API Gateway", "DynamoDB", "IAM", "Secrets Manager", "Python"],
-      type: "Serverless Application",
+      techStack: ["AWS EKS", "ECR", "ALB", "Route 53", "ACM", "GitHub Actions", "Docker", "Prometheus", "Grafana"],
+      type: "AI Application",
       status: "Completed"
     }
   ];
@@ -62,11 +62,11 @@ const Projects = () => {
 
   const getTypeColor = (type: string) => {
     switch (type) {
-      case 'Cloud Infrastructure':
+      case 'CI/CD Pipeline':
         return 'bg-blue-100 text-blue-800 border-blue-200';
-      case 'Architecture Design':
+      case 'DevOps Pipeline':
         return 'bg-purple-100 text-purple-800 border-purple-200';
-      case 'Serverless Application':
+      case 'AI Application':
         return 'bg-orange-100 text-orange-800 border-orange-200';
       default:
         return 'bg-gray-100 text-gray-800 border-gray-200';
@@ -145,7 +145,7 @@ const Projects = () => {
                       <Badge 
                         key={idx} 
                         variant="outline" 
-                        className="text-xs border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-200"
+                        className="text-xs border-primary text-primary"
                       >
                         {tech}
                       </Badge>
