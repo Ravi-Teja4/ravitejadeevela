@@ -2,56 +2,50 @@ import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github, Cloud, Database, Shield, Code } from 'lucide-react';
-import medicareIcon from '@/assets/medicare-icon.jpg';
-import awsServerlessIcon from '@/assets/aws-serverless-icon.jpg';
-import aws3TierIcon from '@/assets/aws-3tier-icon.jpg';
 
 const ModernProjects = () => {
   const projects = [
     {
-      title: "Utility Health Medicare",
-      description: "Designed and implemented a comprehensive cloud-based healthcare analytics infrastructure using AWS services. Built scalable architecture with automated deployment pipelines.",
-      technologies: ["AWS EC2", "S3", "WAF", "Route 53", "Terraform", "CloudWatch", "RDS"],
+      title: "Deployment of Java Application to Amazon EKS",
+      description: "Designed a CI/CD pipeline on GitHub Actions, minimizing manual deployment time by 70%. Containerized the application using Docker, pushed images to Amazon ECR, and managed deployments with Kubernetes manifests on EKS.",
+      technologies: ["Docker", "Kubernetes (Amazon EKS)", "AWS", "GitHub Actions", "Prometheus", "Grafana", "Ubuntu Linux"],
       features: [
-        "Automated infrastructure deployment",
-        "Real-time health analytics dashboard", 
-        "Secure patient data management",
-        "Cost-optimized cloud architecture"
+        "CI/CD pipeline reducing deployment time by 70%",
+        "Docker containerization with ECR image registry",
+        "Kubernetes deployments on EKS",
+        "Real-time monitoring with Prometheus and Grafana"
       ],
-      icon: <Database className="h-8 w-8" />,
-      customIcon: medicareIcon,
+      icon: <Cloud className="h-8 w-8" />,
       gradient: "from-primary to-secondary",
       delay: 0,
       url: "#"
     },
     {
-      title: "AWS Serverless Web Application",
-      description: "Built a fully serverless web application using AWS Lambda, API Gateway, and DynamoDB. Implemented secure authentication and automated CI/CD pipeline.",
-      technologies: ["Lambda", "API Gateway", "DynamoDB", "IAM", "Secrets Manager", "Python"],
+      title: "Realtime Portfolio Deployment on ECS",
+      description: "Deployed a fully automated personal portfolio website using AWS and DevOps tools with production-grade scalability, integrated metrics, and centralized log monitoring.",
+      technologies: ["AWS", "Docker", "GitHub Actions", "Trivy", "SonarQube", "API Gateway", "Lambda", "DynamoDB", "SNS"],
       features: [
-        "Serverless architecture design",
-        "Automated deployment pipeline",
-        "Secure API authentication", 
-        "Real-time data processing"
+        "CI/CD with Trivy security scans and SonarQube analysis",
+        "ECS-based container deployment",
+        "Serverless backend with API Gateway and Lambda",
+        "DynamoDB and SNS for contact form handling"
       ],
       icon: <Code className="h-8 w-8" />,
-      customIcon: awsServerlessIcon,
       gradient: "from-accent to-primary",
       delay: 200,
       url: "#"
     },
     {
-      title: "3-Tier Architecture on AWS",
-      description: "Implemented a scalable 3-tier architecture with load balancing, auto-scaling, and high availability across multiple AZs. Focused on security and performance optimization.",
-      technologies: ["ELB", "Auto Scaling", "VPC", "Security Groups", "CloudFormation", "RDS Multi-AZ"],
+      title: "LLM-Powered Audio Product Review Bot – AudioAdvisor",
+      description: "Implemented a CI/CD pipeline with GitHub Actions, automating builds, tests, and production deployments, reducing manual deployment time by 70%.",
+      technologies: ["AWS (EKS, ECR, ALB, Route 53, ACM)", "GitHub Actions", "Docker", "Prometheus", "Grafana"],
       features: [
-        "High availability design",
-        "Auto-scaling implementation",
-        "Security best practices",
-        "Performance optimization"
+        "CI/CD pipeline reducing deployment time by 70%",
+        "Instant AI chatbot responses for product recommendations",
+        "Low-latency user experience",
+        "End-to-end monitoring improving observability by 80%"
       ],
-      icon: <Cloud className="h-8 w-8" />,
-      customIcon: aws3TierIcon,
+      icon: <Database className="h-8 w-8" />,
       gradient: "from-secondary to-accent",
       delay: 400,
       url: "#"
@@ -102,15 +96,7 @@ const ModernProjects = () => {
                         whileHover={{ rotate: [0, -10, 10, -10, 0] }}
                         transition={{ duration: 0.5 }}
                       >
-                        {project.customIcon ? (
-                          <img 
-                            src={project.customIcon} 
-                            alt={project.title}
-                            className="h-12 w-12 object-contain"
-                          />
-                        ) : (
-                          project.icon
-                        )}
+                        {project.icon}
                       </motion.div>
                       <h3 className="text-xl font-bold text-card-foreground group-hover:text-accent transition-colors duration-300">
                         {project.title}
