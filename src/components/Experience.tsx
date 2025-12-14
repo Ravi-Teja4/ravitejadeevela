@@ -90,7 +90,7 @@ const Experience = () => {
                       <Badge 
                         key={idx} 
                         variant="outline" 
-                        className="border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-200"
+                        className="border-primary text-primary"
                       >
                         {tech}
                       </Badge>
