@@ -6,30 +6,24 @@ import { motion } from 'framer-motion';
 const ModernExperience = () => {
   const experiences = [
     {
-      title: "Freelance Cloud Infrastructure Engineer",
-      company: "UH Medicare",
-      period: "Jun 2025 – Aug 2025",
-      location: "Hyderabad",
-      type: "Freelance",
-      responsibilities: [
-        "Automated AWS infrastructure deployment using Terraform",
-        "Configured CloudWatch metrics, alarms, and logging",
-        "Reduced operational expenses by 25%"
-      ],
-      technologies: ["AWS", "Terraform", "CloudWatch", "Infrastructure as Code"]
-    },
-    {
-      title: "Cloud Intern",
-      company: "CodTech IT Solutions",
-      period: "Jan 2025 – Mar 2025",
-      location: "Remote",
+      title: "Technical Intern",
+      company: "CloudifyOps",
+      period: "December 2025 - Present",
+      location: "Bengaluru, Karnataka, India",
       type: "Internship",
       responsibilities: [
-        "Set up CloudWatch alerts, managed EC2, Lambda, VPC",
-        "Provisioned Auto Scaling and secure VPC subnets",
-        "Implemented cloud security best practices"
+        "Assist in the deployment, configuration, and management of applications on AWS Cloud services (EC2, S3, VPC, RDS, Lambda, EKS, etc.)",
+        "Support DevOps practices, including CI/CD pipeline setup and automation using GitHub Actions, Jenkins, or similar tools",
+        "Work with containerization and orchestration tools like Docker and Kubernetes (EKS)",
+        "Monitor, troubleshoot, and optimize cloud infrastructure for performance, scalability, and security",
+        "Manage and configure Linux servers, including package installation, system updates, and performance monitoring",
+        "Assist in creating Infrastructure as Code (IaC) using Terraform or CloudFormation",
+        "Collaborate with senior engineers to understand system architecture and implement best practices",
+        "Document processes, configurations, and deployment steps for future reference",
+        "Learn and apply cloud security, networking, and cost optimization strategies under guidance",
+        "Execute realtime tasks to gain hands-on experience and contribute to live projects"
       ],
-      technologies: ["AWS", "EC2", "Lambda", "VPC", "Auto Scaling"]
+      technologies: ["AWS", "Docker", "Kubernetes", "EKS", "Terraform", "GitHub Actions", "Jenkins", "Linux"]
     }
   ];
 
