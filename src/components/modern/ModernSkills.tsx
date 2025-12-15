@@ -163,16 +163,16 @@ const ModernSkills = () => {
                 
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <Badge 
+                    <span 
                       key={skillIndex}
-                      variant="secondary"
+                      className="px-3 py-1 text-sm font-medium rounded-md"
                       style={{ 
                         backgroundColor: '#4DA3FF',
                         color: '#FFFFFF'
                       }}
                     >
                       {skill}
-                    </Badge>
+                    </span>
                   ))}
                 </div>
               </CardContent>
