@@ -167,8 +167,8 @@ const ModernSkills = () => {
                       key={skillIndex}
                       className="px-3 py-1 text-sm font-medium rounded-md"
                       style={{ 
-                        backgroundColor: 'transparent',
-                        color: '#4DA3FF'
+                        backgroundColor: '#4DA3FF',
+                        color: '#FFFFFF'
                       }}
                     >
                       {skill}
