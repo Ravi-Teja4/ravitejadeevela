@@ -42,16 +42,11 @@ const ModernExperience = () => {
         </div>
 
         {/* Experience Timeline */}
-        <div className="relative mx-auto flex flex-col items-start px-6" style={{ maxWidth: '1200px' }}>
-          {/* Timeline line - hidden on mobile */}
-          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent transform -translate-x-1/2"></div>
-
+        <div className="relative max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              className={`relative mb-12 last:mb-0 ${
-                index % 2 === 0 ? 'lg:pr-1/2 lg:text-right' : 'lg:pl-1/2 lg:ml-auto'
-              }`}
+              className="relative mb-12 last:mb-0"
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
@@ -62,27 +57,16 @@ const ModernExperience = () => {
               }}
               style={{ willChange: 'transform, opacity' }}
             >
-              {/* Timeline dot - centered */}
-              <motion.div 
-                className="hidden lg:block absolute top-8 left-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10 transform -translate-x-1/2"
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.2 + 0.2, ease: "easeOut" }}
-              />
-
               {/* Experience Card */}
               <motion.div
                 whileHover={{ 
-                  scale: 1.03,
-                  y: -8,
+                  scale: 1.02,
+                  y: -4,
                   transition: { duration: 0.3, ease: "easeOut" }
                 }}
                 style={{ willChange: 'transform' }}
               >
-                <Card className={`relative overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group ${
-                  index % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'
-                }`}>
+                <Card className="relative overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
                 {/* Card gradient border */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
