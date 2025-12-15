@@ -169,9 +169,7 @@ const ModernSkills = () => {
                     <Badge 
                       key={skillIndex}
                       variant="secondary"
-                      className="transition-all duration-300 transform group-hover:scale-105"
                       style={{ 
-                        animationDelay: `${skillIndex * 50}ms`,
                         backgroundColor: '#4DA3FF',
                         color: '#FFFFFF'
                       }}
