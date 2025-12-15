@@ -156,7 +156,7 @@ const ModernSkills = () => {
                       {category.icon}
                     </div>
                   )}
-                  <h3 className="font-bold text-white text-xl">
+                  <h3 className="font-bold text-black text-xl">
                     {category.title}
                   </h3>
                 </div>
