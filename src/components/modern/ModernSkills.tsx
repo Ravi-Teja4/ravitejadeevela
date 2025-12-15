@@ -190,7 +190,7 @@ const ModernSkills = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     <div className={`w-4 h-4 rounded-full ${cert.color}`}></div>
-                    <span className="font-medium text-foreground">{cert.name}</span>
+                    <span className="font-medium text-black">{cert.name}</span>
                   </div>
                   <Badge 
                     variant={cert.status === "In Progress" ? "default" : "secondary"}
