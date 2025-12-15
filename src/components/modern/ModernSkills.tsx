@@ -141,25 +141,22 @@ const ModernSkills = () => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={category.delay}
-              className="group hover:shadow-2xl transition-all duration-500 border border-border/50 bg-card overflow-hidden relative"
+              className="border border-border/50 bg-card overflow-hidden relative"
             >
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
               <CardContent className="p-6 relative z-10">
                 <div className="flex items-center gap-3 mb-4">
                   {category.customIcon ? (
                     <img 
                       src={category.customIcon} 
                       alt={`${category.title} icon`}
-                      className="h-12 w-12 object-contain group-hover:scale-105 transition-transform duration-300"
+                      className="h-12 w-12 object-contain"
                     />
                   ) : (
-                    <div className={`p-3 rounded-xl text-primary-foreground ${category.color} group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`p-3 rounded-xl text-primary-foreground ${category.color}`}>
                       {category.icon}
                     </div>
                   )}
-                  <h3 className="font-bold text-white text-xl group-hover:text-primary transition-colors duration-300">
+                  <h3 className="font-bold text-white text-xl">
                     {category.title}
                   </h3>
                 </div>
